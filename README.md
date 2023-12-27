@@ -60,6 +60,7 @@ Set the desired password for the "admin" user.
 
 ### 10. Remote Desktop Login from Windows
 Access the Linux desktop using Remote Desktop Connection on Windows.
+[Connecting to Linux Remote Desktop from Windows using RDP Guide](#Connecting-to-Linux-Remote-Desktop-from-Windows-using-RDP)
 
 ### 11. Download and Install Pentaho Data Integration (PDI)
 - [Complete Guide](https://github.com/ikhsannur1996/pentaho)
