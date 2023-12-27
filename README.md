@@ -49,14 +49,15 @@ sudo netstat -tuln | grep 3389
 ```bash
 sudo passwd root
 ```
+Note: Sometimes, a root password might be required for initial GUI initialization.
 
 ### 9. Create User for Remote Access
 ```bash
-sudo adduser admin
-sudo usermod -aG sudo admin
-sudo passwd admin
+sudo adduser user1
+sudo usermod -aG sudo user1
+sudo passwd password1
 ```
-Set the desired password for the "admin" user.
+Set the desired password for the "user1" user.
 
 ### 10. Remote Desktop Login from Windows
 [Connecting to Linux Remote Desktop from Windows using RDP Guide](#Connecting-to-Linux-Remote-Desktop-from-Windows-using-RDP)
