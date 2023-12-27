@@ -4,9 +4,7 @@
 This guide provides detailed steps to install Pentaho Data Integration (PDI) on a Linux system. Pentaho is a powerful data integration and business analytics tool.
 
 ## Prerequisites
-- Linux distribution (e.g., Ubuntu)
-- Minimum 8GB RAM and 20GB available hard disk space
-- Access to a Linux machine meeting hardware requirements
+- Linux distribution (e.g., Ubuntu, CentOs)
 - Internet connectivity
 
 ## Why Use XFCE GUI?
