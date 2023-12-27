@@ -62,6 +62,7 @@ Set the desired password for the "admin" user.
 Access the Linux desktop using Remote Desktop Connection on Windows.
 
 ### 11. Download and Install Pentaho Data Integration (PDI)
+- [Complete Guide](https://github.com/ikhsannur1996/pentaho)
 - Visit the Pentaho website or PDI source.
 - Download the Pentaho Data Integration archive.
 
