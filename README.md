@@ -106,6 +106,9 @@ Replace `<file_name.tar.gz>` and `<extracted_folder_name>` with actual file and 
 
 7. **Disconnecting:**
    - To end the remote session, close the Remote Desktop Connection window or use the session window's close button.
+  
+## Visual Guide
+- For a visual guide, watch this [Connecting to Linux Remote Desktop from Windows using RDP](https://youtu.be/oiNStSYwJv4)
 
 ## Note
 - Ensure the Linux machine's XRDP service is running and the RDP port is correctly specified in the connection address.
