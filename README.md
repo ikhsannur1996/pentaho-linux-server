@@ -24,7 +24,7 @@ By opting for XFCE, users can ensure a smooth and responsive experience while wo
 sudo apt-get update
 ```
 
-### 2. Install XFCE Desktop Environment (Optional)
+### 2. Install XFCE Desktop Environment
 ```bash
 sudo apt-get install xfce4-session xfce4-goodies xfce4-panel
 ```
@@ -54,7 +54,7 @@ sudo systemctl status xrdp
 sudo netstat -tuln | grep 3389
 ```
 
-### 8. Set Root Password (if necessary)
+### 8. Set Root Password
 ```bash
 sudo passwd root
 ```
