@@ -77,4 +77,37 @@ Replace `<file_name.tar.gz>` and `<extracted_folder_name>` with actual file and 
 - Ensure your Linux system meets minimum hardware requirements for smooth operation.
 - Adjustments might be required for different Linux distributions.
 - Safeguard root and user passwords for security reasons.
-```
+
+# Connecting to Linux Remote Desktop from Windows using RDP
+
+## Steps to Connect
+
+1. **Open Remote Desktop Connection:**
+   - Press `Windows Key + R` to open the Run dialog box.
+   - Type `mstsc` and hit Enter to open Remote Desktop Connection.
+
+2. **Enter Linux Machine's IP Address and Port (if not default):**
+   - In the Remote Desktop Connection window, enter the IP address of your Linux machine, followed by a colon and the port number (if the RDP port is not the default 3389).
+   - Example: `192.168.1.100:3390`
+
+3. **Enter Credentials:**
+   - Enter the username and password created on the Linux machine (e.g., "admin" with the set password).
+
+4. **Authenticate and Connect:**
+   - Click "OK" or "Connect" to initiate the connection.
+   - Accept any certificate warnings that may appear during the connection process.
+
+5. **Remote Desktop Session:**
+   - After authentication, a new window will display the Linux desktop environment (e.g., XFCE or your configured desktop).
+
+6. **Usage:**
+   - Interact with the Linux desktop remotely as if you were using the machine directly.
+
+7. **Disconnecting:**
+   - To end the remote session, close the Remote Desktop Connection window or use the session window's close button.
+
+## Note
+- Ensure the Linux machine's XRDP service is running and the RDP port is correctly specified in the connection address.
+- Adjust the username, password, IP address, and port based on your specific configurations.
+- This guide assumes a working XRDP setup on the Linux machine and a standard Remote Desktop Connection utility on the Windows system.
+
