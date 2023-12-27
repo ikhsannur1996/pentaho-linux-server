@@ -89,6 +89,7 @@ Replace `<file_name.tar.gz>` and `<extracted_folder_name>` with actual file and 
 - Adjustments might be required for different Linux distributions.
 - Safeguard root and user passwords for security reasons.
 
+
 ## Steps for Red Hat-Based Distributions
 
 ### 1. Update Package Lists
