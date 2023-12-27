@@ -111,3 +111,6 @@ Replace `<file_name.tar.gz>` and `<extracted_folder_name>` with actual file and 
 - Adjust the username, password, IP address, and port based on your specific configurations.
 - This guide assumes a working XRDP setup on the Linux machine and a standard Remote Desktop Connection utility on the Windows system.
 
+![Screenshot (116)](https://github.com/ikhsannur1996/pentaho-linux-server/assets/32507742/94c3c78d-3df8-481a-bc31-bc577e87fd39)
+
+
