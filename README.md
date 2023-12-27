@@ -89,6 +89,83 @@ Replace `<file_name.tar.gz>` and `<extracted_folder_name>` with actual file and 
 - Adjustments might be required for different Linux distributions.
 - Safeguard root and user passwords for security reasons.
 
+Certainly! Red Hat-based distributions, like CentOS or Fedora, have a different package manager (`yum` or `dnf`) compared to Ubuntu's `apt`. Here's a guide tailored for Red Hat-based systems:
+
+## Steps for Red Hat-Based Distributions
+
+### 1. Update Package Lists
+```bash
+sudo yum update   # For CentOS 6 and earlier
+```
+or
+```bash
+sudo yum update   # For CentOS 7 and later
+```
+### 2. Install XFCE Desktop Environment
+```bash
+sudo yum groupinstall "Xfce"
+```
+### 3. Install XRDP for Remote Desktop Access
+```bash
+sudo yum install xrdp
+```
+
+### 4. Install Default Java Development Kit (JDK)
+```bash
+sudo yum install java-1.8.0-openjdk   # For Java 8
+```
+or for Java 11:
+```bash
+sudo yum install java-11-openjdk-devel   # For Java 11
+```
+
+### 5. Install Firefox (Optional)
+```bash
+sudo yum install firefox
+```
+
+### 6. Enable RDP Port (Default is 3389)
+Ensure port 3389 for RDP is open in the firewall settings if needed.
+
+### 7. Check XRDP Status and Port Status
+```bash
+sudo systemctl status xrdp
+sudo ss -tuln | grep 3389
+```
+
+### 8. Set Root Password
+```bash
+sudo passwd root
+```
+**Note:** Sometimes, a root password might be required for initial GUI initialization.
+
+### 9. Create User for Remote Access
+```bash
+sudo adduser user1
+sudo usermod -aG wheel user1   # For sudo access
+sudo passwd password1
+```
+Set the desired password for the "user1" user.
+
+### 10. Remote Desktop Login from Windows
+[Connecting to Linux Remote Desktop from Windows using RDP Guide](#Connecting-to-Linux-Remote-Desktop-from-Windows-using-RDP)
+
+### 11. Download and Install Pentaho Data Integration (PDI)
+Refer to the Pentaho website or PDI source for downloading and installing PDI. Adjust commands based on the distribution.
+
+### 12. Extract and Run Spoon.sh
+```bash
+tar -zxvf <file_name.tar.gz>
+cd <extracted_folder_name>
+./spoon.sh
+```
+Replace `<file_name.tar.gz>` and `<extracted_folder_name>` with actual file and folder names.
+
+### Notes
+- Adapt commands as needed for specific Red Hat-based distributions (CentOS, Fedora).
+- Ensure the system meets the minimum hardware requirements for smooth operation.
+- Remember to secure passwords for root and users for security reasons.
+
 # Connecting to Linux Remote Desktop from Windows using RDP
 
 ## Steps to Connect
