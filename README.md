@@ -1,4 +1,4 @@
-# Installation Guide: Pentaho on Linux
+# Installation Guide: Pentaho on Linux (Ubuntu or Debian Distribution)
 
 ## Introduction
 This guide provides detailed steps to install Pentaho Data Integration (PDI) on a Linux system. Pentaho is a powerful data integration and business analytics tool.
