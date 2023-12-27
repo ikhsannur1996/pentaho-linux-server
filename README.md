@@ -103,10 +103,14 @@ sudo yum update   # For CentOS 7 and later
 sudo yum install epel-release -y
 sudo yum groupinstall "X Window system" -y
 sudo yum groupinstall "Xfce" -y
+sudo systemctl isolate graphical.target
+sudo systemctl set-default graphical.target
 ```
 ### 3. Install XRDP for Remote Desktop Access
 ```bash
 sudo yum install xrdp
+systemctl start xrdp
+systemctl enable xrdp
 ```
 
 ### 4. Install Default Java Development Kit (JDK)
