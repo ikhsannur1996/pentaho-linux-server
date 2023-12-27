@@ -102,7 +102,9 @@ sudo yum update   # For CentOS 7 and later
 ```
 ### 2. Install XFCE Desktop Environment
 ```bash
-sudo yum groupinstall "Xfce"
+sudo yum install epel-release -y
+sudo yum groupinstall "X Window system" -y
+sudo yum groupinstall "Xfce" -y
 ```
 ### 3. Install XRDP for Remote Desktop Access
 ```bash
