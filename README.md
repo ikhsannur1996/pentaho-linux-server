@@ -35,6 +35,7 @@ sudo apt install default-jdk
 ```bash
 sudo apt-get install firefox
 ```
+**Note:** Ensure a web browser is available on your Linux machine to download Pentaho Data Integration, drivers, and any required dependencies.
 
 ### 6. Enable RDP Port (Default is 3389)
 Ensure port 3389 for RDP is open in the firewall settings if needed.
@@ -49,7 +50,7 @@ sudo netstat -tuln | grep 3389
 ```bash
 sudo passwd root
 ```
-Note: Sometimes, a root password might be required for initial GUI initialization.
+**Note:** Sometimes, a root password might be required for initial GUI initialization.
 
 ### 9. Create User for Remote Access
 ```bash
