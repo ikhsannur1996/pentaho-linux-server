@@ -63,7 +63,7 @@ Access the Linux desktop using Remote Desktop Connection on Windows.
 
 ### 11. Download and Install Pentaho Data Integration (PDI)
 - [Complete Guide](https://github.com/ikhsannur1996/pentaho)
-- Visit the Pentaho website or PDI source.
+- Visit the Pentaho website or PDI source. Go to the official Pentaho website: https://www.hitachivantara.com/en-us/products/pentaho-platform/data-integration-analytics/pentaho-community-edition.html.
 - Download the Pentaho Data Integration archive.
 
 ### 12. Extract and Run Spoon.sh
