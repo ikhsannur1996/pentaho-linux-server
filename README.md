@@ -1,4 +1,4 @@
-# Installation Guide: Pentaho Data Integration on Linux (Ubuntu or Debian Distribution)
+# Installation Guide: Pentaho Data Integration on Linux
 
 ## Introduction
 This guide provides detailed steps to install Pentaho Data Integration (PDI) on a Linux system. Pentaho is a powerful data integration and business analytics tool.
@@ -17,7 +17,7 @@ For this installation, we recommend using the XFCE desktop environment. XFCE is 
 
 By opting for XFCE, users can ensure a smooth and responsive experience while working with Pentaho Data Integration.
 
-## Steps
+## Steps for Ubuntu or Debian Distributions
 
 ### 1. Update Package Lists
 ```bash
@@ -88,8 +88,6 @@ Replace `<file_name.tar.gz>` and `<extracted_folder_name>` with actual file and 
 - Ensure your Linux system meets minimum hardware requirements for smooth operation.
 - Adjustments might be required for different Linux distributions.
 - Safeguard root and user passwords for security reasons.
-
-Certainly! Red Hat-based distributions, like CentOS or Fedora, have a different package manager (`yum` or `dnf`) compared to Ubuntu's `apt`. Here's a guide tailored for Red Hat-based systems:
 
 ## Steps for Red Hat-Based Distributions
 
