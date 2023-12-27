@@ -9,6 +9,14 @@ This guide provides detailed steps to install Pentaho Data Integration (PDI) on 
 - Access to a Linux machine meeting hardware requirements
 - Internet connectivity
 
+## Why Use XFCE GUI?
+For this installation, we recommend using the XFCE desktop environment. XFCE is chosen due to its lightweight nature, offering a balance between resource efficiency and a complete desktop experience. Here's why XFCE is advantageous:
+- **Lightweight:** XFCE requires fewer system resources, making it ideal for systems with limited RAM or processing power.
+- **Complete Desktop:** Despite being lightweight, XFCE provides a complete and user-friendly desktop experience, enabling efficient navigation and usability.
+- **Customizability:** XFCE allows for extensive customization, allowing users to tailor their desktop environment according to their preferences.
+
+By opting for XFCE, users can ensure a smooth and responsive experience while working with Pentaho Data Integration.
+
 ## Steps
 
 ### 1. Update Package Lists
