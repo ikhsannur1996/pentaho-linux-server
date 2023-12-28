@@ -98,22 +98,27 @@ or
 ```bash
 sudo yum update   # For CentOS 7 and later
 ```
-### 2. Install XFCE Desktop Environment
+### 2. Install XRDP for Remote Desktop Access
 ```bash
-sudo yum install epel-release -y
-sudo yum groupinstall "X Window system" -y
-sudo yum groupinstall "Xfce" -y
-sudo systemctl isolate graphical.target
-sudo systemctl set-default graphical.target
+sudo yum install -y epel-release
+sudo yum install -y xrdp
+sudo systemctl enable xrdp
+sudo systemctl start xrdp
 ```
-### 3. Install XRDP for Remote Desktop Access
+### 3. Install XFCE Desktop Environment
 ```bash
-sudo yum install xrdp
-systemctl start xrdp
-systemctl enable xrdp
+sudo yum install -y epel-release
+sudo yum groupinstall -y "Xfce"
+sudo reboot
 ```
 
-### 4. Install Default Java Development Kit (JDK)
+### 4. Create the file.Xclients 
+```bash
+echo "xfce4-session" > ~/.Xclients
+chmod a+x ~/.Xclientsfce"
+```
+
+### 5. Install Default Java Development Kit (JDK)
 ```bash
 sudo yum install java-1.8.0-openjdk   # For Java 8
 ```
@@ -122,27 +127,27 @@ or for Java 11:
 sudo yum install java-11-openjdk-devel   # For Java 11
 ```
 
-### 5. Install Firefox (Optional)
+### 6. Install Firefox (Optional)
 ```bash
 sudo yum install firefox
 ```
 
-### 6. Enable RDP Port (Default is 3389)
+### 7. Enable RDP Port (Default is 3389)
 Ensure port 3389 for RDP is open in the firewall settings if needed.
 
-### 7. Check XRDP Status and Port Status
+### 8. Check XRDP Status and Port Status
 ```bash
 sudo systemctl status xrdp
 sudo ss -tuln | grep 3389
 ```
 
-### 8. Set Root Password
+### 9. Set Root Password
 ```bash
 sudo passwd root
 ```
 **Note:** Sometimes, a root password might be required for initial GUI initialization.
 
-### 9. Create User for Remote Access
+### 10. Create User for Remote Access
 ```bash
 sudo adduser user1
 sudo usermod -aG wheel user1   # For sudo access
@@ -150,13 +155,15 @@ sudo passwd password1
 ```
 Set the desired password for the "user1" user.
 
-### 10. Remote Desktop Login from Windows
+### 11. Remote Desktop Login from Windows
 [Connecting to Linux Remote Desktop from Windows using RDP Guide](#Connecting-to-Linux-Remote-Desktop-from-Windows-using-RDP)
 
-### 11. Download and Install Pentaho Data Integration (PDI)
-Refer to the Pentaho website or PDI source for downloading and installing PDI. Adjust commands based on the distribution.
+### 12. Download and Install Pentaho Data Integration (PDI)
+- [Complete Guide](https://github.com/ikhsannur1996/pentaho)
+- Visit the Pentaho website or PDI source. Go to the official Pentaho website: https://www.hitachivantara.com/en-us/products/pentaho-platform/data-integration-analytics/pentaho-community-edition.html.
+- Download the Pentaho Data Integration archive.
 
-### 12. Extract and Run Spoon.sh
+### 13. Extract and Run Spoon.sh
 ```bash
 tar -zxvf <file_name.tar.gz>
 cd <extracted_folder_name>
